@@ -34,6 +34,7 @@ langchain-huggingface
 
 
 🔑 Environment Variables
+
 save this in a .env:
 
 NVIDIA_API_KEY=nvapi-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

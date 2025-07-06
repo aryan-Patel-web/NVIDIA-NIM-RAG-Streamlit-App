@@ -2,7 +2,9 @@ import streamlit as st
 import os
 from langchain_nvidia_ai_endpoints import NVIDIAEmbeddings, ChatNVIDIA
 from langchain_community.document_loaders import WebBaseLoader
+
 # from langchain.embeddings import OllamaEmbeddings
+
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
@@ -16,6 +18,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 ## load the Groq API key
+
 os.environ['NVIDIA_API_KEY']=os.getenv("NVIDIA_API_KEY")
 
 def vector_embedding():
